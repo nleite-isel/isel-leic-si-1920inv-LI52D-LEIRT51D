@@ -1,0 +1,9 @@
+# Encrypt
+openssl enc -e -des -in infile.txt -out ciphered.txt -k si
+
+# Decrypt
+openssl enc -d -des -in ciphered.txt -out infile1.txt -k si
+
+
+# Compute HMAC
+openssl dgst -sha1 -hmac si infile.txt
