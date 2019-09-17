@@ -1,0 +1,17 @@
+# Linux cryptographic hash functions
+
+md5sum infile.txt
+
+sha256sum infile.txt
+
+# Detect changes - hash should be different
+sha256sum infile_changed.txt
+
+# OpenSSL
+openssl dgst -sha256 infile.txt
+
+openssl sha256 infile.txt
+
+openssl dgst -md5 infile.txt
+
+openssl md5 infile.txt
