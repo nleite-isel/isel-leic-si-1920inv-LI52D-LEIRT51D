@@ -1,0 +1,24 @@
+# Certificates - openssl commands
+
+# Connect to www.paypal.com and get certificate info
+openssl s_client -showcerts -connect www.paypal.com:443 </dev/null
+
+# save output info to certificate file paypal-full.pem
+
+# Show certificate file info
+openssl x509 -in paypal-full.pem -text -noout
+
+# Goto, for example, Firefox browser and download the following certificate with common name (CN):
+CN = VeriSign Class 3 Public Primary Certification Authority - G5
+to a file named VeriSignRootG5.pem
+
+# Extract from paypal-full.pem the certificate chain (excluding www.paypal.com certificate)
+and save it in intermediate-ca-chain.pem
+
+# Save www.paypal.com certificate in paypal-single.pem
+
+# Manually verify certificate chain
+openssl verify -verbose -CAfile VeriSignRootG5.pem -untrusted intermediate-ca-chain.pem paypal-single.pem
+
+It should print:
+paypal-single.pem: OK
