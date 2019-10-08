@@ -1,0 +1,41 @@
+# Open Ubuntu VM
+
+# Install Qt Creator C/C++ language IDE
+
+# Create New Project, File - New File or Project, Non-Qt Project, 
+# Plain C Application, Build type: qmake
+
+# Copy tls_client_with_callback.c to Source Dir
+
+# Install OpenSSL lib: libcrypto e libssl
+
+# On Command line run:
+$ whereis libssl
+libssl: /usr/lib/x86_64-linux-gnu/libssl.a /usr/lib/x86_64-linux-gnu/libssl3.so /usr/lib/x86_64-linux-gnu/libssl.so
+$ whereis libcrypto
+libcrypto: /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libcrypto.a
+ 
+# Add Library, libssl and then libcrypto from above paths
+
+# The TLS client show compile successfully now
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
