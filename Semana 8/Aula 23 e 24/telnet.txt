@@ -1,0 +1,16 @@
+$ telnet www.isel.pt 80
+Trying 192.68.221.35...
+Connected to www.isel.pt.
+Escape character is '^]'.
+GET / HTTP/1.1
+host:www.isel.pt
+
+HTTP/1.1 303 See Other
+Content-Type: text/html; charset=UTF-8
+Location: https://www.isel.pt/
+Server: Microsoft-IIS/8.5
+Date: Tue, 29 Oct 2019 17:20:40 GMT
+Content-Length: 143
+
+<head><title>Document Moved</title></head>
+<body><h1>Object Moved</h1>This document may be found <a HREF="https://www.isel.pt/">here</a></body>
