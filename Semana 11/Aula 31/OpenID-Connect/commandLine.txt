@@ -1,0 +1,33 @@
+npm install
+
+npm install express
+
+npm install jsonwebtoken
+
+node relying-party-demo.js 
+
+# Create Client account in
+Console do Google Cloud Platform
+https://console.developers.google.com/?hl=pt-BR
+
+Este é seu ID do cliente
+1057256337446-qrssavk8hijf078q9em4rrki28d5o12g.apps.googleusercontent.com
+
+Esta é sua chave secreta do cliente
+_8Z_gCAYrmMmVq_t4wrys8pd
+
+# On linux with the shell bash, you create environment variables like this (in the console):
+#export FOO=bar
+
+export CLIENT_ID=1057256337446-qrssavk8hijf078q9em4rrki28d5o12g.apps.googleusercontent.com
+export CLIENT_SECRET=_8Z_gCAYrmMmVq_t4wrys8pd
+
+echo $CLIENT_ID
+echo $CLIENT_SECRET
+
+
+# Access
+
+http://localhost:3001/ 
+
+in the browser to connect to relying-party
